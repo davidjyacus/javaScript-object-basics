@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+
+    const littleFeat = {
+      name: "Little Feat",
+      nationality: "USA",
+      genre: "Rock/New Orleans funk",
+      members: 6,
+      formed: 1969,
+      split: 1979,
+      albums: [
+        {
+          name: "LittleFeat",
+          released: 1969
+        }, {
+          name: "Waiting for Columbus" ,
+          released: 1978
+        }, {
+          name: "Down on the Farm",
+          released: 1979
+        }
+      ]
+    };
+
+   
+
+    bandInfo = "Little Feat is an American rock band formed by lead vocalist and guitarist Lowell George, keyboardist Bill Payne, drummer Richie Hayward and bassist Roy Estrada in 1969 in Los Angeles. The band's classic line-up, in place by late 1972, comprised George, Payne, Hayward, bassist Kenny Gradney, guitarist and vocalist Paul Barrere and percussionist Sam Clayton. George disbanded the group because of creative differences shortly before his death in 1979. Surviving members re-formed Little Feat in 1987 and the band has remained active to the present.";
+    
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
